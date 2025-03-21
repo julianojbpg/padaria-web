@@ -1,0 +1,94 @@
+.container {
+    width: 100%;
+    height: auto;
+    background-color: rgb(95, 42, 42);
+    display: flex;
+    flex-direction: column;
+    border-top: solid 5px rgb(231, 176, 18);
+
+}
+.sectionA {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.sectionB {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: white;
+}
+.divRedeSociais {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    gap: 20px;
+}
+.divIcone{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+}
+
+
+
+.divEndereco {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+.divGoogleMaps {
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgMapa{
+    width: 90%;
+    height: 90%;
+}
+.img{
+    width: 25px;
+    height: 25px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.p{
+    font-size: 13pt;
+}
+
+@media (max-width: 639px) {
+    .p{
+        font-size: 10pt;
+    }
+}
+@media (max-width: 579px) {
+    .sectionA{
+        flex-direction: column;
+    }
+    .divRedeSociais, .divEndereco, .divGoogleMaps{
+        width: 100%;
+    }
+    .sectionB{
+        font-size: 10pt;
+        padding: 10px;
+    }
+}

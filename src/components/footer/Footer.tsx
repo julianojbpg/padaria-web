@@ -5,14 +5,14 @@ import Whatsapp from '@/assets/whatsapp.png'
 import Email from '@/assets/email.png'
 import Cartao from '@/assets/cartao.png'
 import Pix from '@/assets/pix.png'
-import Mapa from '@/assets/mapa.jpg'
+import logo from '@/assets/TJGOMES.png'
 
 export default function Footer() {
     return (
         <div className={css.container}>
             <section className={css.sectionA}>
                 <div className={css.divRedeSociais}>
-                    <div className={css.divIcone}>Padaria</div>
+                    <div className={css.divIcone}><img src={logo.src} alt="TJ Gomes" className={css.logo}/></div>
                     <label>Redes Sociais</label>
                     <div>
                         <img src={Facebook.src} alt="Facebook" className={css.img} />
@@ -46,11 +46,9 @@ export default function Footer() {
 
                 </div>
                 <div className={css.divGoogleMaps}>
-                    <a href="https://www.google.com.br/maps/place/R.+Roraima,+399+-+Morada+do+Contorno,+Resende+-+RJ,+27525-674/@-22.4814014,-44.5061611,18z/data=!3m1!4b1!4m6!3m5!1s0x9e78f07a09238f:0xeee8b40976c754d6!8m2!3d-22.4814039!4d-44.5048736!16s%2Fg%2F11lmp2pyd_?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <img src={Mapa.src} alt="google maps" className={css.imgMapa} />
-                    </a>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1843.303422813195!2d-44.50487359999999!3d-22.481403899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e78f07a09238f%3A0xeee8b40976c754d6!2sR.%20Roraima%2C%20399%20-%20Morada%20do%20Contorno%2C%20Resende%20-%20RJ%2C%2027525-674!5e0!3m2!1spt-BR!2sbr!4v1742517603135!5m2!1spt-BR!2sbr" 
+                width="600" height="450" style={{border:'0'}} loading="lazy"></iframe>
                 </div>
             </section>
             <section className={css.sectionB}>

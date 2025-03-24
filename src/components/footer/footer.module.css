@@ -36,11 +36,13 @@
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(49, 49, 49);
+    justify-content: center;  
 }
-
-
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
 
 .divEndereco {
     width: 30%;
@@ -75,12 +77,8 @@
     font-size: 13pt;
 }
 
-@media (max-width: 639px) {
-    .p{
-        font-size: 10pt;
-    }
-}
-@media (max-width: 579px) {
+
+@media (max-width: 772px) {
     .sectionA{
         flex-direction: column;
     }

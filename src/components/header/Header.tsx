@@ -5,7 +5,7 @@ export default function Header() {
     return(
         <div className={css.container}>
             <ShoppingCart  className={css.icon}/>
-            <p>Logo aqui</p>
+            <p className={css.icon}>Padaria TJ Gomes</p>
             <User className={css.icon}/>
         </div>
     )

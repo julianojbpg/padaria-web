@@ -8,8 +8,8 @@ export default function ListCards({ produtos }: props) {
     return (
         <div className={css.container_cards}>
             <div className={css.grid_cards}>
-                {produtos.map(item => (
-                    <Card produto={item} />
+                {produtos.map((item, index )=> (
+                    <Card produto={item} key={index} />
                 ))}
             </div>
         </div>

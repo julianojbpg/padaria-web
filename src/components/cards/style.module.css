@@ -62,3 +62,17 @@
     border-top: 2px solid gray;
     padding-top: 20px;
 }
+
+@media (max-width:980px) {
+    .grid_cards{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .grid_cards{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
